@@ -1,0 +1,104 @@
+@keyframes moving1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(15px);
+  }
+
+  50% {
+    transform: translateX(-15px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moving2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-15px);
+  }
+
+  50% {
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moving3 {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-20px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heydiSky {
+    height: 3em;
+  }
+}
+
+.heydiSky {
+  height: 8em;
+  width: 100%;
+  margin-bottom: 1em;
+  background-color: #00BFFE;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heydiCloud {
+  max-width: 12%;
+  line-height: 0;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+.heydiCloud img {
+  max-width: 100%;
+}
+
+.cloud1 {
+  animation-name: moving3;
+  max-width: 10%;
+}
+
+.cloud2 {
+  animation-name: moving2;
+}
+
+.cloud3 {
+  animation-name: moving1;
+  align-self: flex-end;
+}
+
+.cloud4 {
+  animation-name: moving3;
+}
+
+.cloud5 {
+  animation-name: moving1;
+  align-self: flex-end;
+}

@@ -1,0 +1,41 @@
+.logo {
+  display: block;
+  border-bottom: 0;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.logo>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo .symbol {
+  margin-right: 0.65em;
+}
+
+.symbol img {
+  display: block;
+  max-width: 100%;
+}
+
+.heydiBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heydiLogo {
+  background-color: #fce8d2;
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+  width: 30%;
+  max-width: 300px;
+}
+
+.heydiShopRoof img {
+  max-width: 100%;
+}

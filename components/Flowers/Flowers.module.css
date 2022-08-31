@@ -1,0 +1,55 @@
+@keyframes turning {
+  0% {
+    transform: rotate(-30deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+.flower {
+  width: 6vw;
+  height: 6vw;
+  max-width: 96px;
+  max-height: 96px;
+  ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  animation-name: turning;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+}
+
+.flower.flower1 {
+  background-image: url(/images/flowers/flower1.png);
+}
+
+.flower.flower2 {
+  background-image: url(/images/flowers/flower2.png);
+}
+
+.flower.flower3 {
+  background-image: url(/images/flowers/flower3.png);
+}
+
+.flower.flower4 {
+  background-image: url(/images/flowers/flower4.png);
+}
+
+.flower.flower5 {
+  background-image: url(/images/flowers/flower5.png);
+}
