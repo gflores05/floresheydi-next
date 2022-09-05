@@ -1,16 +1,17 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from 'react'
 
 export const useWindowDimensions = () => {
   if (typeof window !== 'undefined') {
     const [dimensions, setDimensions] = useState({
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     })
 
-    const handleResize = () => setDimensions({
-      width: window.innerWidth,
-      height: window.innerHeight
-    })
+    const handleResize = () =>
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      })
 
     useEffect(() => {
       window.addEventListener('resize', handleResize)

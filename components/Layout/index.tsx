@@ -1,10 +1,10 @@
-import Footer from "@components/Footer"
-import Header from "@components/Header"
-import Head from "next/head"
-import dynamic from "next/dynamic"
-import { ReactNode } from "react"
+import Footer from '@components/Footer'
+import Header from '@components/Header'
+import Head from 'next/head'
+import dynamic from 'next/dynamic'
+import { ReactNode } from 'react'
 
-const Flowers = dynamic(() => import("@components/Flowers"), { ssr: false })
+const Flowers = dynamic(() => import('@components/Flowers'), { ssr: false })
 
 interface LayoutProps {
   children: ReactNode

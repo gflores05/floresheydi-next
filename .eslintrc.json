@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": ["react-hooks"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    // TypeScript
+    "camelcase": "off", // We like using the TypeScript ESLint rule for this.
+    "import/no-duplicates": "warn", // This is slow AF so only run locally
+    "space-before-function-paren": "off", // We like not having spaces between function name and parens
+    "no-useless-constructor": "off", // We like using `private`/`public` initializers
+    "no-void": "off", // We like using `void stuff() ||`
+    "no-dupe-class-members": "off", // We like having TS handle this for us.
+    "no-empty-pattern": "off", // We like empty object patterns for React components.
+    "no-unused-expressions": "off", // We like TS optional chaining, which this rule catches as an unused expression
+    "no-use-before-define": "off", // We like hoisting
+    // React
+    "react/display-name": "off", // We like to use inline components for tasks.
+    "react/prop-types": "off", // We like TypeScript for prop validation.
+    "react/no-unescaped-entities": "off", // We like readable React components
+    "react/no-deprecated": "warn", // This is slow AF so only run locally
+    "react-hooks/rules-of-hooks": "error" // We like hooks
+  }
 }
