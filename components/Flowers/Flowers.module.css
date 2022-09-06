@@ -32,6 +32,7 @@
   animation-name: turning;
   animation-duration: 11s;
   animation-iteration-count: infinite;
+  z-index: 3;
 }
 
 .flower.flower1 {

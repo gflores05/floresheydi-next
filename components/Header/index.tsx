@@ -1,3 +1,4 @@
+import Menu from '@components/Menu'
 import Banner from './Banner'
 
 export default function Header() {
@@ -5,7 +6,7 @@ export default function Header() {
     <header id="header">
       <div className="">
         <Banner></Banner>
-        {/* <Menu></Menu> */}
+        <Menu></Menu>
       </div>
     </header>
   )
