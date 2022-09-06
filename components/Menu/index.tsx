@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import cx from 'classnames'
-import styles from './Menu.module.sass'
 import NavLink from '@components/NavLink'
+import cx from 'classnames'
+import { useState } from 'react'
+import styles from './Menu.module.sass'
 
 export default function Menu() {
   const [visible, setVisible] = useState(false)

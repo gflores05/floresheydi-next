@@ -1,7 +1,7 @@
-import { useCallback, useEffect, useState } from 'react'
-import cx from 'classnames'
 import { useWindowDimensions } from '@hooks/dimensions-hook'
-import styles from './Flowers.module.css'
+import cx from 'classnames'
+import { useEffect, useState } from 'react'
+import styles from './Flowers.module.sass'
 
 const INIT = -192
 const INCREMENT = 100

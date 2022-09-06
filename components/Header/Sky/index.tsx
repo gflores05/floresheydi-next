@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import cx from 'classnames'
-import styles from './Sky.module.css'
+import Image from 'next/image'
+import styles from './Sky.module.sass'
 
 export default function Sky() {
   return (

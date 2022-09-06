@@ -1,7 +1,7 @@
 import Sky from '@components/Header/Sky'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './Banner.module.css'
+import styles from './Banner.module.sass'
 
 export default function Banner() {
   return (

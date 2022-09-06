@@ -1,7 +1,7 @@
-import React from 'react'
+import cx from 'classnames'
 import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/router'
-import cx from 'classnames'
+import React from 'react'
 
 export interface NavLinkProps extends LinkProps {
   children: React.ReactElement
